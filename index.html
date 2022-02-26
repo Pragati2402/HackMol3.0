@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sorting Visualizer</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1><a href="#">Sorting Visualizer</a></h1>
+      </div>
+    </header>
+    <nav>
+      <div class="container1">
+        <div>
+          <button class="button1">New Array</button>
+        </div>
+        <div class="slidecontainer">
+          <button class="button1">Size</button>
+          <p>
+            <input
+              type="range"
+              min="5"
+              max="100"
+              step="1"
+              value="50"
+              class="slider"
+              id="arrSize"
+            />
+          </p>
+        </div>
+        <div class="slidecontainer">
+          <button class="button1">Speed</button>
+          <p>
+            <input
+              type="range"
+              min="20"
+              max="300"
+              value="60"
+              class="slider"
+              id="sortSpeed"
+            />
+          </p>
+        </div>
+        <div class="playpause x">
+          <div class="button"></div>
+        </div>
+        <div class="dropdown">
+          <button class="button1">Algorithm</button>
+          <div class="dropdown-content">
+            <div class="dropdown-hover">
+              <button class="button1">Bubble Sort</button>
+            </div>
+            <div class="dropdown-hover">
+              <button class="button1">Selection Sort</button>
+            </div>
+            <div class="dropdown-hover">
+              <button class="button1">Insertion Sort</button>
+            </div>
+            <div class="dropdown-hover">
+              <button class="button1">Quick Sort</button>
+            </div>
+            <div class="dropdown-hover">
+              <button class="button1">Merge Sort</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div id="bars" class="flex-container"></div>
+    <script>
+      const playpause = document.querySelector(".playpause");
+
+      playpause.addEventListener("click", () => {
+        playpause.classList.toggle("playing");
+      }); 
+    </script>
+  </body>
+</html>

@@ -1,0 +1,181 @@
+body {
+  font-family: sans-serif;
+  font-size: 18px;
+  line-height: 1em;
+  padding: 0;
+  margin: 0;
+  background-color: rgba(33, 37, 41, 0.986);
+}
+.container {
+  width: 100%;
+  margin: auto;
+  overflow: hidden;
+}
+a {
+  color: whitesmoke;
+  text-decoration: none;
+}
+a:hover {
+  color: #cec1a8;
+}
+header {
+  background-color: rgb(10, 117, 117);
+  color: whitesmoke;
+  padding-top: auto;
+  padding-left: 30px;
+  min-height: 50px;
+  text-align: center;
+}
+
+.container a {
+  color: whitesmoke;
+}
+.container a:hover {
+  color: aliceblue;
+}
+.container1 {
+  display: flex;
+  /*align-items: flex-start;
+    flex-direction: column;*/
+  /*justify-content: space-around;*/
+  flex-wrap: wrap;
+}
+.container1 > div {
+  /*border: 2px black solid;*/
+  margin-top: 5px;
+  padding: 0;
+  flex-basis: 10%;
+  text-align: center;
+}
+.button1 {
+  font-size: inherit;
+  text-align: inherit;
+  border: none;
+  outline: none;
+  color: white;
+  padding-top: 0;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+  text-align: start;
+}
+.slidecontainer {
+  width: 100%;
+}
+.slider {
+  margin-top: 0;
+  -webkit-appearance: none;
+  width: 100px;
+  height: 3px;
+  padding: 0;
+  background-color: rgb(10, 117, 117);
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
+}
+.slider:hover {
+  opacity: 1;
+}
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  background: whitesmoke;
+  cursor: pointer;
+}
+.sliderValue {
+  height: 20px;
+  width: 20px;
+  position: relative;
+  background-color: whitesmoke;
+  border-radius: 1px;
+  text-align: center;
+}
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+.dropdown .dropbtn {
+  font-size: inherit;
+  text-align: inherit;
+  border: none;
+  outline: none;
+  color: white;
+
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgb(10, 117, 117);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  font-weight: 500;
+  margin: 10px;
+}
+.dropdown-content button {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+.dropdown-hover:hover {
+  background-color: rgb(233, 198, 198);
+  color: rgb(17, 1, 1);
+}
+/*.dropdown-content .button1:hover {
+  background-color: rgb(233, 198, 198);
+  color: rgb(17, 1, 1);
+}*/
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.playpause {
+  padding: 0;
+  border-radius: 0;
+  background: inherit;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  align-self: center;
+}
+
+.playpause:hover {
+  background: #464646;
+}
+
+.playpause .button {
+  width: 30px;
+  height: 30px;
+  background: rgb(10, 117, 117);
+  transition: inherit;
+  clip-path: polygon(
+    0 0,
+    50% 25%,
+    50% 75%,
+    50% 75%,
+    50% 25%,
+    100% 50%,
+    100% 50%,
+    0 100%
+  );
+}
+
+.playpause.playing .button {
+  clip-path: polygon(
+    0 0,
+    40% 0,
+    40% 100%,
+    60% 100%,
+    60% 0,
+    100% 0,
+    100% 100%,
+    0 100%
+  );
+}
