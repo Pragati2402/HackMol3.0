@@ -19,7 +19,7 @@ function generateBars(num = 30) {
         bar.classList.add("bar");
         barEl.push(value);
         bar.style.height = `${value * 3}px`;
-        bar.style.background = "white";
+        bar.style.background = "linear-gradient(315deg, #00bfb2 0%, #028090 74%)";
         bar.style.border = "1px solid black"
         bar.style.transform = `translateX(${i * 30}px)`;
         bar.classList.add(`barNo${i}`);
